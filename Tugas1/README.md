@@ -121,7 +121,6 @@ Pada ProyekPrioritas menggunakan : An Array
 
 ## Screenshot program 
 
-
 ## Reference (Library used, etc)
 Pandas
 BeutifulSoup 4
