@@ -120,7 +120,13 @@ Pada DaftarProyek menggunakan : An Object
 Pada ProyekPrioritas menggunakan : An Array
 
 ## Screenshot program 
-
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_1.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_2.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_3.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_4.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_5.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_6.png)
+![alt text](https://github.com/aldomatthew/Seleksi-2018/blob/master/Tugas1/screenshots/DaftarProyek/DP_7.png)
 ## Reference (Library used, etc)
 Pandas
 BeutifulSoup 4
