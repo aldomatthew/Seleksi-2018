@@ -1,4 +1,4 @@
-- Description
+## Description
 (a) Data Scraping
 Data scraping  adalah teknik yang digunakan untuk mengambil isi sebuah halaman secara spesifik, misalnya link gambar, isi berita atau sejenisnya. Pada tugas ini akan mengambil data dari halaman web
 
@@ -35,7 +35,7 @@ Informasi baru yang dapat diperoleh :
 :)
 
 
-- Specification
+## Specification
 
 1. Lakukan data scraping dari sebuah laman web untuk memeroleh data atau informasi tertentu TANPA MENGGUNAKAN API.
 
@@ -61,7 +61,7 @@ Informasi baru yang dapat diperoleh :
 
 12. JSON harus dinormalisasi dan harus di-preprocessing. Preprocessing contohnya : Cleaning, Parsing, Transformation, dan lain-lain.
 
-- How to use
+## How to use
 #A. Daftar Proyek
 1. Buka folder src 
 2. Buka Folder DaftarProyek
@@ -80,7 +80,7 @@ Informasi baru yang dapat diperoleh :
 5. File di run 
 ##############################
 
-## Datanya
+##Datanya
 1. Format data csv
 2. Membuka website https://www.csvjson.com/csv2json ### :)
 3. DaftarProyek.csv convert ke Json
@@ -107,7 +107,7 @@ Informasi baru yang dapat diperoleh :
 5. File di run 
 ##############################
 
-## Datanya
+##Datanya
 1. Format data csv
 2. Membuka website https://www.csvjson.com/csv2json ### :)
 3. DaftarProyek.csv convert ke Json
@@ -115,13 +115,13 @@ Informasi baru yang dapat diperoleh :
 5. Edit file apabila ada yang unidentified character maka di hapus dengan ctr+f kemudian karakter tersebut di replace dengan character lain
 6. Save as ke folder data - ProyekPrioritas :)
 
-- JSON Structure
+## JSON Structure
 Pada DaftarProyek menggunakan : An Object
 Pada ProyekPrioritas menggunakan : An Array
 
-- Screenshot program (di-upload pada folder screenshots, di-upload file image nya, dan ditampilkan di dalam README)
+## Screenshot program (di-upload pada folder screenshots, di-upload file image nya, dan ditampilkan di dalam README)
 
-- Reference (Library used, etc)
+## Reference (Library used, etc)
 Pandas
 BeutifulSoup 4
 urllib
