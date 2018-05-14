@@ -3,19 +3,22 @@ import urllib.request
 import bs4 as bs
 import pandas 
 import csv
-#1
 #
+#jalan-tol-balikpapan-samarinda
 soup1 = urllib.request.urlopen('https://kppip.go.id/proyek-prioritas/jalan/jalan-tol-balikpapan-samarinda/').read()
-#
+##Melakukan request dan open terhadap url yang di inginkan
 p_soup1 = bs.BeautifulSoup(soup1,'lxml')
-#
+#BeautifulSoup
+#mencari class container , karena sudah tahu data terletak dimana 
+#maka index data yang di tuju adalah 3
 title_1 = p_soup1.findAll('div',class_='container')[3]
 get_title_1 = title_1.h1.text
+#mendapatkan title yang di inginkan
 print(get_title_1)
-
+#membuat suatu list
 mylist = []
 mylist2=[]
-
+#menambahkan elemen setiap list
 mylist.append(get_title_1)
 print(mylist)
 tabel_1 = p_soup1.findAll('table')[0]
@@ -23,12 +26,13 @@ get_tbody_1 = tabel_1.findAll('tbody')[0]
 get_tr_1 = get_tbody_1.findAll('tr')[0]
 get_invest1 = get_tr_1.findAll('td')[2].get_text()
 print(get_invest1)
-
+#mendapatkan nilai investasi yang di inginkan
+#menambahkan element list
 mylist2.append(get_invest1)
 print (mylist2)
 
 
-#
+#jalan-tol-manado-bitung
 soup2 = urllib.request.urlopen('https://kppip.go.id/proyek-prioritas/jalan/jalan-tol-manado-bitung/').read()
 p_soup2 = bs.BeautifulSoup(soup2,'lxml')
 title_2 = p_soup2.findAll('div',class_='container')[3]
@@ -47,8 +51,7 @@ print(mylist)
 df = pandas.DataFrame(data={"proyek_jalan": mylist, "nilai_investasi": mylist2})
 df.to_csv("./file.csv", sep=',',index=False)
 '''
-#
-
+#jalan-tol-serang-panimbang
 soup3 = urllib.request.urlopen('https://kppip.go.id/proyek-prioritas/jalan/jalan-tol-serang-panimbang/').read()
 p_soup3 = bs.BeautifulSoup(soup3,'lxml')
 title_3 = p_soup3.findAll('div',class_='container')[3]
@@ -76,7 +79,7 @@ get_tr_4 = get_tbody_4.findAll('tr')[1]
 get_td_4 = get_tr_4.findAll('td')[3].get_text()
 print(get_td_4)
 '''
-#
+#jalan-tol-probolinggo-banyuwangi-17036km
 soup5 = urllib.request.urlopen('https://kppip.go.id/proyek-prioritas/jalan/jalan-tol-probolinggo-banyuwangi-17036km//').read()
 p_soup5 = bs.BeautifulSoup(soup5,'lxml')
 title_5 = p_soup5.findAll('div',class_='container')[3]
@@ -91,7 +94,7 @@ print(get_invest5)
 mylist.append(get_title_5)
 mylist2.append(get_invest5)
 
-#
+#jalan-tol-yogyakarta-bawen-71km
 
 soup6 = urllib.request.urlopen('https://kppip.go.id/proyek-prioritas/jalan/jalan-tol-yogyakarta-bawen-71km/').read()
 p_soup6 = bs.BeautifulSoup(soup6,'lxml')
@@ -114,6 +117,4 @@ mylist2.append(get_invest6)
 df = pandas.DataFrame(data={"nama_proyek": mylist, "nilai_investasi": mylist2})
 df.to_csv("ProyekJalan", sep=',',index=False)
 
-
-#mylist.append(get_invest1)
 
