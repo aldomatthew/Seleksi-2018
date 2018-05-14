@@ -119,7 +119,8 @@ Informasi baru yang dapat diperoleh :
 Pada DaftarProyek menggunakan : An Object
 Pada ProyekPrioritas menggunakan : An Array
 
-## Screenshot program (di-upload pada folder screenshots, di-upload file image nya, dan ditampilkan di dalam README)
+## Screenshot program 
+
 
 ## Reference (Library used, etc)
 Pandas
